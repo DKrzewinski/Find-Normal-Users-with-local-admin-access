@@ -2,7 +2,7 @@
 
 ## Overview
 
-This PowerShell script/function, `findmemberofgroup.ps1`, is designed to search Active Directory for groups matching a specified pattern and retrieve the members of those groups. It then filters the output to display accounts that do not match a specified pattern.
+This PowerShell script, `Find-Normal-Users-With-LocalAdmin-Access`, is designed to search Active Directory for groups matching a specified pattern and retrieve the members of those groups. It then filters the output to display accounts that do not match a specified pattern.
 
 ## Requirements
 
@@ -17,7 +17,7 @@ This PowerShell script/function, `findmemberofgroup.ps1`, is designed to search 
 
 2. **Run the Script:**
    ```powershell
-   .\findmemberofgroup.ps1
+   .\Find-Normal-Users-With-LocalAdmin-Access.ps1
    ```
 
    The script will prompt the user with the accounts that need to be checked based on the specified pattern.
@@ -37,7 +37,7 @@ This PowerShell script/function, `findmemberofgroup.ps1`, is designed to search 
 
 ```powershell
 Import-Module ActiveDirectory
-.\findmemberofgroup.ps1
+.\Find-Normal-Users-With-LocalAdmin-Access.ps1
 ```
 
 The output will list accounts to be checked, excluding those matching the exclusion pattern.
